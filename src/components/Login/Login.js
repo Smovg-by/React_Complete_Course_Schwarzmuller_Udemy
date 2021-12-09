@@ -11,6 +11,7 @@ const Login = (props) => {
   const [passwordIsValid, setPasswordIsValid] = useState();
   const [formIsValid, setFormIsValid] = useState(false);
   const [enabled, setSetEnabled] = useState(false);
+  const [enabled1, setSetEnabled1] = useState(false);
 
   useEffect(()=>{
     const identifier = setTimeout(()=>{
