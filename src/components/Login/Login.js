@@ -12,6 +12,8 @@ const Login = (props) => {
   const [enteredPassword, setEnteredPassword] = useState('');
   const [passwordIsValid, setPasswordIsValid] = useState();
   const [formIsValid, setFormIsValid] = useState(false);
+  const [enabled, setSetEnabled] = useState(false);
+  const [enabled1, setSetEnabled1] = useState(false);
 
   useEffect(()=>{
     const identifier = setTimeout(()=>{
@@ -57,6 +59,8 @@ const Login = (props) => {
     event.preventDefault();
     props.onLogin(enteredEmail, enteredPassword);
   };
+
+  console.log('hello');
 
   return (
     <Card className={classes.login}>
