@@ -6,6 +6,7 @@ import Button from '../UI/Button/Button';
 
 const Login = (props) => {
   const [enteredEmail, setEnteredEmail] = useState('');
+  const [enteredEmail1, setEnteredEmail1] = useState('');
   const [emailIsValid, setEmailIsValid] = useState();
   const [enteredPassword, setEnteredPassword] = useState('');
   const [passwordIsValid, setPasswordIsValid] = useState();
